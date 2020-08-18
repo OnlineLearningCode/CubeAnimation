@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-color: #222;
+}   
+
+#Loading-page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    
+}
+
+
+#loader {
+
+        width: 100px;
+        height: 100px;
+}
+rect{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: orange;
+    stroke-width: 100%;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50%;
+    animation: loading 1s ease infinite;
+}
+
+
+@keyframes loading {
+    to {
+        stroke-dashoffset: 250%;
+    }
+}
